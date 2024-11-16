@@ -19,10 +19,10 @@ public class java {
 
     public static int maxsubarraySum2(int[] arr){
         int n = arr.length;
-        int maxsum = 0;
-        int currsum = 0;
+        int maxsum = arr[0];
+        int currsum = arr[0];
 
-        for(int i=0; i<n; i++){
+        for(int i=1; i<n; i++){
             currsum = Math.max(currsum + arr[i]. arr[i]);
             maxsum = Math.max(maxsum, currsum);
         }
